@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/main_sdv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:backgroundImage="@android:color/holo_orange_light"
+        app:fadeDuration="5000"
+        app:failureImage="@mipmap/ic_launcher_round"
+        app:placeholderImage="@mipmap/ic_launcher_round"
+        app:placeholderImageScaleType="fitCenter"
+        app:progressBarImage="@mipmap/ic_launcher_round"
+        app:retryImage="@mipmap/ic_launcher_round"
+        app:retryImageScaleType="centerCrop"
+        app:roundAsCircle="true"
+        app:roundWithOverlayColor="@android:color/darker_gray"
+        app:roundingBorderColor="@android:color/holo_red_light"
+        app:roundingBorderWidth="1dp" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="11111"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/food_str_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22222"
+        android:textSize="16sp" />
+
+</LinearLayout>

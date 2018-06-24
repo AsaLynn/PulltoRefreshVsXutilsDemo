@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/main_sdv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:backgroundImage="@android:color/holo_orange_light"
+        app:fadeDuration="5000"
+        app:failureImage="@mipmap/ic_launcher_round"
+        app:placeholderImage="@mipmap/ic_launcher_round"
+        app:placeholderImageScaleType="fitCenter"
+        app:progressBarImage="@mipmap/ic_launcher_round"
+        app:retryImage="@mipmap/ic_launcher_round"
+        app:retryImageScaleType="centerCrop"
+        app:roundAsCircle="true"
+        app:roundWithOverlayColor="@android:color/darker_gray"
+        app:roundingBorderColor="@android:color/white"
+        app:roundingBorderWidth="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/food_str_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="大虾 葱 生姜 植物油 料酒" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数量:" />
+
+            <TextView
+                android:id="@+id/num_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="99"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="编号:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/collect_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1981"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
